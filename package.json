@@ -1,10 +1,13 @@
 {
-  "name": "user-auth-tutor",
+  "name": "user-authentication",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open"
   },
   "author": "Agnes Meri",
   "license": "ISC",
@@ -12,7 +15,15 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-async-handler": "^1.1.4",
+    "lodash": "^4.17.11",
     "mongodb": "^3.1.11",
-    "mongoose": "^5.4.4"
+    "mongoose": "^5.4.4",
+    "webpack": "^4.28.4"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14"
   }
 }
